@@ -1,0 +1,61 @@
+{
+  "chain": "ethereum",
+  "method": "disconnect_backfill",
+  "wss": "wss://ethereum-rpc.publicnode.com",
+  "http": "https://ethereum-rpc.publicnode.com",
+  "pre_disconnect_heads": [
+    {
+      "height": 26451363,
+      "hash": "0x56a58ab7b4ddce7cde89c8fe05aba94f077efb610ab4a69b63e7e6faa56d8f9d",
+      "recv_ms": 1795118172212.6475
+    },
+    {
+      "height": 26451364,
+      "hash": "0xc0d0cd9ef365ce8678a97ff2e1975736c3f5658d1856845e8a61fb33db7fb062",
+      "recv_ms": 1795118184886.5408
+    },
+    {
+      "height": 26451365,
+      "hash": "0x106231607e87e5bd55c4a721018ec2acaad0f4c5be371eaef45e05992f2b7e53",
+      "recv_ms": 1795118197298.2544
+    },
+    {
+      "height": 26451366,
+      "hash": "0x1f1f1defa8ece13555a44429793b60dda0f88e149f584d8d6619bb6a2d9a9592",
+      "recv_ms": 1795118208275.7334
+    },
+    {
+      "height": 26451367,
+      "hash": "0x46c9998344dafd5e5ff157612d34a42644e7543472975afd054c0949b28d6ffd",
+      "recv_ms": 1795118221292.462
+    }
+  ],
+  "last_height_before_disconnect": 26451367,
+  "disconnect_at_ms": 1795118221292.4697,
+  "sleep_s": 35,
+  "tip_after_reconnect": 26451369,
+  "gap_from": 26451368,
+  "gap_to": 26451369,
+  "gap_block_count": 2,
+  "naked_would_miss": 2,
+  "backfilled_count": 2,
+  "backfill_failures": [],
+  "backfill_success_rate": 1.0,
+  "backfill_duration_ms": 148.0390625,
+  "parentHash_continuity_ok": true,
+  "continuity_breaks": [],
+  "backfilled_sample": [
+    {
+      "height": 26451368,
+      "hash": "0x701ef4512d82743ccf496fc7213eb22d3e396f9b8ffa89b61401dbf7365a3d3a",
+      "parentHash": "0x46c9998344dafd5e5ff157612d34a42644e7543472975afd054c0949b28d6ffd",
+      "tx_count": 278
+    },
+    {
+      "height": 26451369,
+      "hash": "0x8ea360e3d4d7f133fba3e76c96adab505bbadedd4dcc2d0e5be540d8067ac036",
+      "parentHash": "0x701ef4512d82743ccf496fc7213eb22d3e396f9b8ffa89b61401dbf7365a3d3a",
+      "tx_count": 337
+    }
+  ]
+}

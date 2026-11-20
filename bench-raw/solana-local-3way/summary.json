@@ -1,0 +1,811 @@
+{
+  "generated_beijing": "2026-11-20 04:11:30 +0800",
+  "env": {
+    "solana_core": "4.4.1",
+    "yellowstone_grpc_geyser": "17.0.2+solana.4.4.1",
+    "rpc": "http://127.0.0.1:8899",
+    "ws": "ws://127.0.0.1:8900",
+    "grpc": "127.0.0.1:10000",
+    "plugin_config": "grpc-local/config.json",
+    "ledger": "grpc-local/ledger",
+    "note": "本地 solana-test-validator + Yellowstone 插件；一次性测试密钥；非主网"
+  },
+  "runs_found": [
+    "confirmed_run1.json",
+    "confirmed_run2.json",
+    "confirmed_run3.json",
+    "processed_run1.json",
+    "processed_run2.json",
+    "processed_run3.json"
+  ],
+  "processed": {
+    "commitment": "processed",
+    "n_runs": 3,
+    "files": [
+      "processed_run1.json",
+      "processed_run2.json",
+      "processed_run3.json"
+    ],
+    "n_sent_total": 300,
+    "validator_version": {
+      "feature-set": 2681577653,
+      "solana-core": "4.4.1"
+    },
+    "per_run": [
+      {
+        "file": "processed_run1.json",
+        "n_sent": 100,
+        "methods": {
+          "grpc": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 1.1,
+              "median": 2.2,
+              "p90": 3.7,
+              "p99": 24.7,
+              "max": 33.3,
+              "mean": 3.3
+            }
+          },
+          "ws": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 6.9,
+              "median": 199.4,
+              "p90": 358.8,
+              "p99": 429.8,
+              "max": 431.0,
+              "mean": 201.2
+            }
+          },
+          "http": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 55.5,
+              "median": 297.6,
+              "p90": 488.6,
+              "p99": 547.4,
+              "max": 656.4,
+              "mean": 324.5
+            }
+          }
+        },
+        "first_to_see": {
+          "grpc": 99,
+          "ws": 1,
+          "http": 0
+        },
+        "slot_delta_ms": {
+          "ws_slotSubscribe_minus_grpc_CREATED_BANK": {
+            "n": 136,
+            "min": -2.9,
+            "median": -0.4,
+            "p90": -0.1,
+            "p99": 0.2,
+            "max": 0.3,
+            "mean": -0.4
+          },
+          "ws_slotSubscribe_minus_grpc_FIRST_SHRED": {
+            "n": 0
+          },
+          "http_getSlot_minus_grpc_processed": {
+            "n": 136,
+            "min": 0.2,
+            "median": 105.6,
+            "p90": 179.4,
+            "p99": 198.2,
+            "max": 199.0,
+            "mean": 101.9
+          },
+          "grpc_PROCESSED_minus_grpc_CREATED_BANK": {
+            "n": 135,
+            "min": 399.9,
+            "median": 406.9,
+            "p90": 443.9,
+            "p99": 469.3,
+            "max": 469.8,
+            "mean": 414.6
+          },
+          "grpc_CONFIRMED_minus_grpc_PROCESSED": {
+            "n": 136,
+            "min": 0.4,
+            "median": 23.9,
+            "p90": 24.8,
+            "p99": 55.3,
+            "max": 57.9,
+            "mean": 21.3
+          },
+          "grpc_FINALIZED_minus_grpc_CONFIRMED": {
+            "n": 105,
+            "min": 12935.9,
+            "median": 13090.0,
+            "p90": 13281.2,
+            "p99": 13539.6,
+            "max": 13588.1,
+            "mean": 13128.9
+          }
+        },
+        "slot_counts": {
+          "grpc": 0,
+          "ws": 137,
+          "http": 137,
+          "grpc_SLOT_COMPLETED": 137,
+          "grpc_SLOT_PROCESSED": 136,
+          "grpc_SLOT_FINALIZED": 136,
+          "grpc_SLOT_CONFIRMED": 136,
+          "grpc_SLOT_CREATED_BANK": 136
+        }
+      },
+      {
+        "file": "processed_run2.json",
+        "n_sent": 100,
+        "methods": {
+          "grpc": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 1.0,
+              "median": 2.2,
+              "p90": 11.4,
+              "p99": 43.3,
+              "max": 63.6,
+              "mean": 5.4
+            }
+          },
+          "ws": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 9.8,
+              "median": 202.1,
+              "p90": 401.0,
+              "p99": 454.7,
+              "max": 458.9,
+              "mean": 216.9
+            }
+          },
+          "http": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 63.5,
+              "median": 320.2,
+              "p90": 504.6,
+              "p99": 628.8,
+              "max": 676.3,
+              "mean": 345.3
+            }
+          }
+        },
+        "first_to_see": {
+          "grpc": 100,
+          "ws": 0,
+          "http": 0
+        },
+        "slot_delta_ms": {
+          "ws_slotSubscribe_minus_grpc_CREATED_BANK": {
+            "n": 134,
+            "min": -5.0,
+            "median": -0.4,
+            "p90": -0.1,
+            "p99": 3.6,
+            "max": 30.8,
+            "mean": -0.2
+          },
+          "ws_slotSubscribe_minus_grpc_FIRST_SHRED": {
+            "n": 0
+          },
+          "http_getSlot_minus_grpc_processed": {
+            "n": 133,
+            "min": 0.5,
+            "median": 98.0,
+            "p90": 185.0,
+            "p99": 199.5,
+            "max": 203.1,
+            "mean": 103.3
+          },
+          "grpc_PROCESSED_minus_grpc_CREATED_BANK": {
+            "n": 133,
+            "min": 400.7,
+            "median": 408.3,
+            "p90": 469.8,
+            "p99": 507.3,
+            "max": 521.4,
+            "mean": 424.6
+          },
+          "grpc_CONFIRMED_minus_grpc_PROCESSED": {
+            "n": 134,
+            "min": 3.1,
+            "median": 24.0,
+            "p90": 24.8,
+            "p99": 37.1,
+            "max": 75.3,
+            "mean": 21.5
+          },
+          "grpc_FINALIZED_minus_grpc_CONFIRMED": {
+            "n": 103,
+            "min": 13243.0,
+            "median": 13525.0,
+            "p90": 13680.8,
+            "p99": 13750.4,
+            "max": 13756.1,
+            "mean": 13521.7
+          }
+        },
+        "slot_counts": {
+          "grpc": 0,
+          "ws": 135,
+          "http": 133,
+          "grpc_SLOT_PROCESSED": 134,
+          "grpc_SLOT_FINALIZED": 134,
+          "grpc_SLOT_CREATED_BANK": 134,
+          "grpc_SLOT_CONFIRMED": 134,
+          "grpc_SLOT_COMPLETED": 134
+        }
+      },
+      {
+        "file": "processed_run3.json",
+        "n_sent": 100,
+        "methods": {
+          "grpc": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 1.2,
+              "median": 2.0,
+              "p90": 4.5,
+              "p99": 29.4,
+              "max": 34.7,
+              "mean": 3.6
+            }
+          },
+          "ws": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 4.9,
+              "median": 199.9,
+              "p90": 377.0,
+              "p99": 417.2,
+              "max": 498.9,
+              "mean": 208.2
+            }
+          },
+          "http": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 55.0,
+              "median": 312.1,
+              "p90": 504.2,
+              "p99": 542.7,
+              "max": 693.2,
+              "mean": 332.0
+            }
+          }
+        },
+        "first_to_see": {
+          "grpc": 98,
+          "ws": 2,
+          "http": 0
+        },
+        "slot_delta_ms": {
+          "ws_slotSubscribe_minus_grpc_CREATED_BANK": {
+            "n": 138,
+            "min": -7.2,
+            "median": -0.4,
+            "p90": -0.2,
+            "p99": 0.1,
+            "max": 0.1,
+            "mean": -0.5
+          },
+          "ws_slotSubscribe_minus_grpc_FIRST_SHRED": {
+            "n": 0
+          },
+          "http_getSlot_minus_grpc_processed": {
+            "n": 137,
+            "min": 0.5,
+            "median": 100.3,
+            "p90": 186.3,
+            "p99": 200.7,
+            "max": 201.1,
+            "mean": 102.0
+          },
+          "grpc_PROCESSED_minus_grpc_CREATED_BANK": {
+            "n": 137,
+            "min": 402.0,
+            "median": 406.1,
+            "p90": 430.6,
+            "p99": 484.1,
+            "max": 495.2,
+            "mean": 412.2
+          },
+          "grpc_CONFIRMED_minus_grpc_PROCESSED": {
+            "n": 137,
+            "min": 0.8,
+            "median": 24.2,
+            "p90": 24.8,
+            "p99": 45.2,
+            "max": 63.6,
+            "mean": 22.0
+          },
+          "grpc_FINALIZED_minus_grpc_CONFIRMED": {
+            "n": 107,
+            "min": 12966.4,
+            "median": 13124.2,
+            "p90": 13171.0,
+            "p99": 13194.5,
+            "max": 13199.0,
+            "mean": 13110.8
+          }
+        },
+        "slot_counts": {
+          "grpc": 0,
+          "ws": 138,
+          "http": 137,
+          "grpc_SLOT_COMPLETED": 138,
+          "grpc_SLOT_PROCESSED": 138,
+          "grpc_SLOT_FINALIZED": 138,
+          "grpc_SLOT_CREATED_BANK": 138,
+          "grpc_SLOT_CONFIRMED": 137
+        }
+      }
+    ],
+    "pooled_latency_ms": {
+      "grpc": {
+        "n": 300,
+        "min": 1.0,
+        "median": 2.1,
+        "p90": 5.3,
+        "p99": 35.5,
+        "max": 63.6,
+        "mean": 4.1
+      },
+      "ws": {
+        "n": 300,
+        "min": 4.9,
+        "median": 200.6,
+        "p90": 385.6,
+        "p99": 453.3,
+        "max": 498.9,
+        "mean": 208.8
+      },
+      "http": {
+        "n": 300,
+        "min": 55.0,
+        "median": 313.0,
+        "p90": 504.2,
+        "p99": 628.8,
+        "max": 693.2,
+        "mean": 333.9
+      }
+    },
+    "pooled_first_to_see": {
+      "grpc": 297,
+      "ws": 3,
+      "http": 0
+    },
+    "pooled_detected": {
+      "grpc": 300,
+      "ws": 300,
+      "http": 300
+    },
+    "pooled_missed_n": {
+      "grpc": 0,
+      "ws": 0,
+      "http": 0
+    },
+    "mean_of_run_medians_ms": {
+      "grpc": 2.1,
+      "ws": 200.5,
+      "http": 310.0
+    }
+  },
+  "confirmed": {
+    "commitment": "confirmed",
+    "n_runs": 3,
+    "files": [
+      "confirmed_run1.json",
+      "confirmed_run2.json",
+      "confirmed_run3.json"
+    ],
+    "n_sent_total": 300,
+    "validator_version": {
+      "feature-set": 2681577653,
+      "solana-core": "4.4.1"
+    },
+    "per_run": [
+      {
+        "file": "confirmed_run1.json",
+        "n_sent": 100,
+        "methods": {
+          "grpc": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 30.0,
+              "median": 252.4,
+              "p90": 402.3,
+              "p99": 447.0,
+              "max": 451.7,
+              "mean": 246.7
+            }
+          },
+          "ws": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 28.8,
+              "median": 248.7,
+              "p90": 398.4,
+              "p99": 436.1,
+              "max": 457.8,
+              "mean": 238.0
+            }
+          },
+          "http": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 42.5,
+              "median": 306.2,
+              "p90": 502.1,
+              "p99": 511.6,
+              "max": 513.2,
+              "mean": 341.2
+            }
+          }
+        },
+        "first_to_see": {
+          "grpc": 4,
+          "ws": 96,
+          "http": 0
+        },
+        "slot_delta_ms": {
+          "ws_slotSubscribe_minus_grpc_CREATED_BANK": {
+            "n": 162,
+            "min": -509.0,
+            "median": -430.6,
+            "p90": -418.0,
+            "p99": -407.9,
+            "max": -407.0,
+            "mean": -429.3
+          },
+          "ws_slotSubscribe_minus_grpc_FIRST_SHRED": {
+            "n": 0
+          },
+          "http_getSlot_minus_grpc_confirmed": {
+            "n": 162,
+            "min": 0.2,
+            "median": 101.0,
+            "p90": 180.7,
+            "p99": 199.2,
+            "max": 200.9,
+            "mean": 100.7
+          },
+          "grpc_PROCESSED_minus_grpc_CREATED_BANK": {
+            "n": 163,
+            "min": 0.1,
+            "median": 0.2,
+            "p90": 0.3,
+            "p99": 0.4,
+            "max": 0.7,
+            "mean": 0.2
+          },
+          "grpc_CONFIRMED_minus_grpc_PROCESSED": {
+            "n": 163,
+            "min": 0.0,
+            "median": 0.0,
+            "p90": 0.1,
+            "p99": 0.3,
+            "max": 0.5,
+            "mean": 0.0
+          },
+          "grpc_FINALIZED_minus_grpc_CONFIRMED": {
+            "n": 132,
+            "min": 12917.8,
+            "median": 12947.5,
+            "p90": 13016.6,
+            "p99": 13042.3,
+            "max": 13043.0,
+            "mean": 12957.9
+          }
+        },
+        "slot_counts": {
+          "grpc": 0,
+          "ws": 164,
+          "http": 163,
+          "grpc_SLOT_COMPLETED": 164,
+          "grpc_SLOT_FINALIZED": 163,
+          "grpc_SLOT_CREATED_BANK": 163,
+          "grpc_SLOT_PROCESSED": 163,
+          "grpc_SLOT_CONFIRMED": 163
+        }
+      },
+      {
+        "file": "confirmed_run2.json",
+        "n_sent": 100,
+        "methods": {
+          "grpc": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 32.5,
+              "median": 284.7,
+              "p90": 424.3,
+              "p99": 506.4,
+              "max": 588.9,
+              "mean": 266.4
+            }
+          },
+          "ws": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 31.7,
+              "median": 278.3,
+              "p90": 420.2,
+              "p99": 505.7,
+              "max": 587.8,
+              "mean": 261.4
+            }
+          },
+          "http": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 78.4,
+              "median": 339.0,
+              "p90": 529.8,
+              "p99": 568.3,
+              "max": 751.4,
+              "mean": 362.9
+            }
+          }
+        },
+        "first_to_see": {
+          "grpc": 6,
+          "ws": 94,
+          "http": 0
+        },
+        "slot_delta_ms": {
+          "ws_slotSubscribe_minus_grpc_CREATED_BANK": {
+            "n": 155,
+            "min": -673.6,
+            "median": -433.9,
+            "p90": -426.1,
+            "p99": -413.0,
+            "max": -410.2,
+            "mean": -450.7
+          },
+          "ws_slotSubscribe_minus_grpc_FIRST_SHRED": {
+            "n": 0
+          },
+          "http_getSlot_minus_grpc_confirmed": {
+            "n": 155,
+            "min": -0.4,
+            "median": 95.0,
+            "p90": 184.3,
+            "p99": 198.7,
+            "max": 201.0,
+            "mean": 99.5
+          },
+          "grpc_PROCESSED_minus_grpc_CREATED_BANK": {
+            "n": 156,
+            "min": 0.1,
+            "median": 0.2,
+            "p90": 0.3,
+            "p99": 3.2,
+            "max": 3.7,
+            "mean": 0.2
+          },
+          "grpc_CONFIRMED_minus_grpc_PROCESSED": {
+            "n": 156,
+            "min": 0.0,
+            "median": 0.0,
+            "p90": 0.1,
+            "p99": 0.2,
+            "max": 1.7,
+            "mean": 0.1
+          },
+          "grpc_FINALIZED_minus_grpc_CONFIRMED": {
+            "n": 125,
+            "min": 13106.7,
+            "median": 13655.3,
+            "p90": 13964.7,
+            "p99": 14025.8,
+            "max": 14045.3,
+            "mean": 13635.3
+          }
+        },
+        "slot_counts": {
+          "grpc": 0,
+          "ws": 157,
+          "http": 156,
+          "grpc_SLOT_COMPLETED": 157,
+          "grpc_SLOT_FINALIZED": 156,
+          "grpc_SLOT_CREATED_BANK": 156,
+          "grpc_SLOT_PROCESSED": 156,
+          "grpc_SLOT_CONFIRMED": 156
+        }
+      },
+      {
+        "file": "confirmed_run3.json",
+        "n_sent": 100,
+        "methods": {
+          "grpc": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 35.7,
+              "median": 237.5,
+              "p90": 406.3,
+              "p99": 444.5,
+              "max": 449.1,
+              "mean": 237.9
+            }
+          },
+          "ws": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 15.7,
+              "median": 230.8,
+              "p90": 397.7,
+              "p99": 437.4,
+              "max": 443.0,
+              "mean": 228.7
+            }
+          },
+          "http": {
+            "detected": 100,
+            "missed_n": 0,
+            "latency_ms_from_send": {
+              "n": 100,
+              "min": 41.6,
+              "median": 300.6,
+              "p90": 485.6,
+              "p99": 515.5,
+              "max": 629.3,
+              "mean": 336.9
+            }
+          }
+        },
+        "first_to_see": {
+          "grpc": 0,
+          "ws": 100,
+          "http": 0
+        },
+        "slot_delta_ms": {
+          "ws_slotSubscribe_minus_grpc_CREATED_BANK": {
+            "n": 162,
+            "min": -447.3,
+            "median": -430.7,
+            "p90": -417.8,
+            "p99": -408.5,
+            "max": -407.8,
+            "mean": -428.8
+          },
+          "ws_slotSubscribe_minus_grpc_FIRST_SHRED": {
+            "n": 0
+          },
+          "http_getSlot_minus_grpc_confirmed": {
+            "n": 163,
+            "min": -0.2,
+            "median": 103.4,
+            "p90": 184.0,
+            "p99": 199.9,
+            "max": 200.7,
+            "mean": 104.1
+          },
+          "grpc_PROCESSED_minus_grpc_CREATED_BANK": {
+            "n": 163,
+            "min": 0.1,
+            "median": 0.2,
+            "p90": 0.3,
+            "p99": 0.7,
+            "max": 3.4,
+            "mean": 0.2
+          },
+          "grpc_CONFIRMED_minus_grpc_PROCESSED": {
+            "n": 163,
+            "min": 0.0,
+            "median": 0.0,
+            "p90": 0.1,
+            "p99": 0.3,
+            "max": 0.5,
+            "mean": 0.0
+          },
+          "grpc_FINALIZED_minus_grpc_CONFIRMED": {
+            "n": 132,
+            "min": 12919.6,
+            "median": 12945.5,
+            "p90": 12967.4,
+            "p99": 12977.5,
+            "max": 12980.2,
+            "mean": 12945.7
+          }
+        },
+        "slot_counts": {
+          "grpc": 0,
+          "ws": 164,
+          "http": 163,
+          "grpc_SLOT_COMPLETED": 164,
+          "grpc_SLOT_FINALIZED": 163,
+          "grpc_SLOT_CREATED_BANK": 163,
+          "grpc_SLOT_PROCESSED": 163,
+          "grpc_SLOT_CONFIRMED": 163
+        }
+      }
+    ],
+    "pooled_latency_ms": {
+      "grpc": {
+        "n": 300,
+        "min": 30.0,
+        "median": 256.5,
+        "p90": 413.6,
+        "p99": 465.9,
+        "max": 588.9,
+        "mean": 250.3
+      },
+      "ws": {
+        "n": 300,
+        "min": 15.7,
+        "median": 250.0,
+        "p90": 405.3,
+        "p99": 463.4,
+        "max": 587.8,
+        "mean": 242.7
+      },
+      "http": {
+        "n": 300,
+        "min": 41.6,
+        "median": 308.6,
+        "p90": 506.5,
+        "p99": 565.9,
+        "max": 751.4,
+        "mean": 347.0
+      }
+    },
+    "pooled_first_to_see": {
+      "grpc": 10,
+      "ws": 290,
+      "http": 0
+    },
+    "pooled_detected": {
+      "grpc": 300,
+      "ws": 300,
+      "http": 300
+    },
+    "pooled_missed_n": {
+      "grpc": 0,
+      "ws": 0,
+      "http": 0
+    },
+    "mean_of_run_medians_ms": {
+      "grpc": 258.2,
+      "ws": 252.6,
+      "http": 315.3
+    }
+  }
+}

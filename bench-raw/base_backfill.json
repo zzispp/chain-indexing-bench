@@ -1,0 +1,91 @@
+{
+  "chain": "base",
+  "method": "disconnect_backfill",
+  "wss": "wss://base-rpc.publicnode.com",
+  "http": "https://base-rpc.publicnode.com",
+  "pre_disconnect_heads": [
+    {
+      "height": 59638348,
+      "hash": "0x14ce72c04b1e765fc3e4fa47d6ab7260062633fa0af7740aa18f9003385d8e90",
+      "recv_ms": 1795118044979.1199
+    },
+    {
+      "height": 59638349,
+      "hash": "0xd2af578b88ea45b2ff44c43d5cb4a4a23f737e8082a0ed05bea27e605cd4efb8",
+      "recv_ms": 1795118045192.7107
+    },
+    {
+      "height": 59638350,
+      "hash": "0xb15d13ec6efc0cdf9bae0fbe1e93bb63ec29c82a622cea754038e0a38f1d919c",
+      "recv_ms": 1795118045404.0254
+    },
+    {
+      "height": 59638351,
+      "hash": "0xc40b50a09c8bec857d9701ad413b9b871c9cca91a4b8cbf97d833603a161b2b8",
+      "recv_ms": 1795118045570.6848
+    },
+    {
+      "height": 59638352,
+      "hash": "0x3190abc6cf2a862b87530b58e77d53dae2902af65241bb3eff472ee230b8a030",
+      "recv_ms": 1795118045800.826
+    }
+  ],
+  "last_height_before_disconnect": 59638352,
+  "disconnect_at_ms": 1795118045800.829,
+  "sleep_s": 25,
+  "tip_after_reconnect": 59638482,
+  "gap_from": 59638353,
+  "gap_to": 59638482,
+  "gap_block_count": 130,
+  "naked_would_miss": 130,
+  "backfilled_count": 130,
+  "backfill_failures": [],
+  "backfill_success_rate": 1.0,
+  "backfill_duration_ms": 11544.572998046875,
+  "parentHash_continuity_ok": true,
+  "continuity_breaks": [],
+  "backfilled_sample": [
+    {
+      "height": 59638353,
+      "hash": "0x79f69bfd9ab23087b29697a27edf899b12bc19acc87463d496c0dea650072c1a",
+      "parentHash": "0x3190abc6cf2a862b87530b58e77d53dae2902af65241bb3eff472ee230b8a030",
+      "tx_count": 10
+    },
+    {
+      "height": 59638354,
+      "hash": "0x29aa1a23470e74854afc90596610e50abaecd9cbe791e3e519100e8d4d6c7eb5",
+      "parentHash": "0x79f69bfd9ab23087b29697a27edf899b12bc19acc87463d496c0dea650072c1a",
+      "tx_count": 19
+    },
+    {
+      "height": 59638355,
+      "hash": "0xa445a4650a3192dec17697a00f7e413c33b0879955055ea122a1d9b36e393ae3",
+      "parentHash": "0x29aa1a23470e74854afc90596610e50abaecd9cbe791e3e519100e8d4d6c7eb5",
+      "tx_count": 12
+    },
+    {
+      "height": 59638356,
+      "hash": "0x76704c83eed47af171e5f1f577817f422bf38002e135a5a328ed000fb2d8e166",
+      "parentHash": "0xa445a4650a3192dec17697a00f7e413c33b0879955055ea122a1d9b36e393ae3",
+      "tx_count": 12
+    },
+    {
+      "height": 59638357,
+      "hash": "0x07d4e16b60ec711b4a41c22ac68ec645ba176f37a633c765b9260ad62b22181c",
+      "parentHash": "0x76704c83eed47af171e5f1f577817f422bf38002e135a5a328ed000fb2d8e166",
+      "tx_count": 14
+    },
+    {
+      "height": 59638481,
+      "hash": "0xa44d6d8fc04dacf3513e19af7bff09b23521e856231d2d26a84bf595eb40e306",
+      "parentHash": "0xad20293e5fda4783b256ef1182c52928f9f7fc8f9cb2ffcb7f845aeb0e243923",
+      "tx_count": 30
+    },
+    {
+      "height": 59638482,
+      "hash": "0x22ce25dd182dc061743906d7e57f240835370a4e093067b7022c38182ee9bba5",
+      "parentHash": "0xa44d6d8fc04dacf3513e19af7bff09b23521e856231d2d26a84bf595eb40e306",
+      "tx_count": 39
+    }
+  ]
+}

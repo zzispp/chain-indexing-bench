@@ -1,0 +1,9 @@
+aiohttp==3.14.5
+websockets==17.4
+grpcio==1.85.3
+grpcio-tools==1.85.3
+protobuf==7.36.2
+solders==0.29.0
+base58==2.1.1
+matplotlib==3.11.2
+numpy==2.5.5

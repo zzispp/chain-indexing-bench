@@ -1,0 +1,12 @@
+beijing: 2026-11-20 04:11:35 +0800
+solana-test-validator: solana-test-validator 4.4.1 (src:5bb30402; feat:9fd5a0b5, client:Agave)
+solana-cli: solana-cli 4.4.1 (src:5bb30402; feat:9fd5a0b5, client:Agave)
+cluster-version: 4.4.1
+[2026-11-19T20:11:35Z INFO  client] Connected
+[2026-11-19T20:11:35Z INFO  client] response: GetVersionResponse { version: "{\"version\":{\"package\":\"yellowstone-grpc-geyser\",\"version\":\"17.0.2+solana.4.4.1\",\"proto\":\"14.0.1\",\"solana\":\"4.4.1\",\"git\":\"v17.0.0+solana.4.4.0-4-g3c66a65\",\"rustc\":\"1.98.1\",\"buildts\":\"2026-11-18T12:46:42.046158237Z\"},\"extra\":{\"hostname\":\"redacted\"}}" }
+python 3.13.5
+aiohttp 3.14.5
+websockets 17.4
+grpc 1.85.3
+solders 0.29.0
+node: v24.22.1

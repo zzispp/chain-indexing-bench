@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyc
+.env
+grpc-local/ledger/
+grpc-local/config.json
+grpc-local/gen/
+grpc-local/*.so
+grpc-local/client-linux-amd64
+grpc-local/*keypair*
+grpc-local/validator.log
+*.so
+*.log
